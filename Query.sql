@@ -34,3 +34,16 @@ Quantity INT,
 Price INT,
 FOREIGN KEY (Order_id) REFERENCES Orders(Order_id),
 FOREIGN KEY (Product_id) REFERENCES Products(Product_id));
+
+INSERT INTO Customers(Name, Email, Phone_Number, Address) VALUES
+("Eniola Hannah", "eniola.hannah@gmail.com", "09054866796", "ojoo area, Ibadan"),
+("Fatima Oyindamola", "o.fatima@gmail.com", "08076543212", "ogo oluwa area, Oshogbo"),
+("Glory Kolawole", "glorykolawole@gmail.com", "0709875432", "Oshodi, Lagos"),
+("Amoo Adeola", "aadeola@gmail.com", "09123456789", "Lekki - Phase 1, Lagos"),
+("Ogunleye Kolade", "ogunleye.k@gmail.com", "08132547698", "Igbo-sai area, Ogbomosho"),
+("Joel Emmanuel", "Jemmanuel@gmail.com", "08123456789", "agbowo area, Ibadan"),
+("Ololade Victor", "olavictor@gmail.com", "0711323452354", "Gwarki area, Abuja"),
+("Femi Gabriel", "femi.gabriel@gmail.com", "08076567843", "Gwagwalada area, Abuja"),
+("Nathan Oladipo", "oladipo.nathan@gmail.com", "0705643211223", "Grek area, Jos"),
+("Betty Clement", "cbetty@gmail.com", "08076879809", "Gospel area, Ibadan");
+SELECT * FROM Customers;
