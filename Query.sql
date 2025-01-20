@@ -17,3 +17,11 @@ Category VARCHAR(50),
 Price INT NOT NULL,
 Stock_quantity INT);
 DESCRIBE Products;
+
+CREATE TABLE Orders(
+Order_id INT AUTO_INCREMENT PRIMARY KEY,
+Customer_id INT NOT NULL,
+Order_date DATE,
+Total_amount INT,
+FOREIGN KEY (Customer_id) REFERENCES Customers(Customer_id));
+DESCRIBE Orders;
