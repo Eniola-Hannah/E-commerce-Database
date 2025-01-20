@@ -25,3 +25,12 @@ Order_date DATE,
 Total_amount INT,
 FOREIGN KEY (Customer_id) REFERENCES Customers(Customer_id));
 DESCRIBE Orders;
+
+CREATE TABLE Order_Items(
+Order_item_id INT AUTO_INCREMENT PRIMARY KEY,
+Order_id INT NOT NULL,
+Product_id INT NOT NULL,
+Quantity INT,
+Price INT,
+FOREIGN KEY (Order_id) REFERENCES Orders(Order_id),
+FOREIGN KEY (Product_id) REFERENCES Products(Product_id));
